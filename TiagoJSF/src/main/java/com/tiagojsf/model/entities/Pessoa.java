@@ -7,8 +7,10 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import org.hibernate.annotations.ForeignKey;
 
 /**
  *
@@ -27,21 +29,39 @@ public class Pessoa implements Serializable{
     @GeneratedValue
     @Column(name="IdPessoa", nullable = false)
     private Integer idPessoa;
+    
     @Column(nullable = false, length = 80)
     private String nome;
+    
     @Column(nullable = false, length = 50)
     private String email;
+    
     @Column(nullable = false, length = 15)
     private String telefone;
+    
     @Column(nullable = false, length = 14)
     private String cpf;
+    
     @Column(nullable = false)
     @Temporal(value = TemporalType.DATE)
     private Date  DataNascimento;
+    
     @Column(nullable = false )
     @Temporal(value = TemporalType.DATE)
     private Date  DataCadastro;
 
+    @ManyToOne(optional = false)
+    @ForeignKey(name = "pessoa")
+    private Pessoa pessoa;
+
+    public Pessoa getPessoa() {
+        return pessoa;
+    }
+
+    public void setPessoa(Pessoa pessoa) {
+        this.pessoa = pessoa;
+    }
+    
     public Integer getIdPessoa() {
         return idPessoa;
     }
