@@ -1,4 +1,3 @@
-  
 package com.tiagojsf.model.dao;
  
 import java.io.Serializable;
