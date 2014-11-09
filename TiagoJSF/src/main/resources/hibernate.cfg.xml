@@ -31,12 +31,12 @@
         <property name="c3p0.idle_test_period">300</property>
         
         <!-- LISTA DE ENTIDADES --> 
-        <mapping class="com.tiagojsf.model.Cidade"/>        
-        <mapping class="com.tiagojsf.model.Endereco"/>      
+        <mapping class="com.tiagojsf.model.entities.Cidade"/>        
+        <mapping class="com.tiagojsf.model.entities.Endereco"/>      
         <mapping class="com.tiagojsf.model.entities.Estado"/>      
         <mapping class="com.tiagojsf.model.entities.Pessoa"/>               
         <mapping class="com.tiagojsf.model.entities.Sexo"/>
         <mapping class="com.tiagojsf.model.entities.TipoEndereco"/>
         <mapping class="com.tiagojsf.model.entities.TipoLogradouro"/>
-    </session-factory>
+    </session-factory>  
 </hibernate-configuration>
