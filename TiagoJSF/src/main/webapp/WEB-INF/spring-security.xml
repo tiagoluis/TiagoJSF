@@ -31,8 +31,8 @@
         <b:property name="url" value="jdbc:mysql://localhost:3306/tiagojsf" />
         <b:property name="driverClassName" value="com.mysql.jdbc.Driver" />
         <b:property name="username" value="root" />
-        <b:property name="password" value="" />
-    </b:bean>
+        <b:property name="password" value="root" />
+    </b:bean> 
     
     <!-- MAS EXISTEM OUTRAS 2 FORMAS DE SE FAZER ISSO -->
     <!-- VOCÊ PODE CUSTOMIZAR A AUTENTICATION PROVIDER -->

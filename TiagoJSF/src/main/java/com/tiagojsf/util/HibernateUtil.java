@@ -17,7 +17,7 @@ public class HibernateUtil {
 
     static {
         try {
-            System.err.println("Tentando Abrir uma SessionFactory");
+            System.out.println("Tentando Abrir uma SessionFactory");
             Configuration configuration = new Configuration().configure();
             ServiceRegistry serviceRegistre = new ServiceRegistryBuilder().applySettings(configuration.getProperties()).buildServiceRegistry();
 

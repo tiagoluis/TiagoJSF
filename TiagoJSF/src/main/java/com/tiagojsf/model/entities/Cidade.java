@@ -50,6 +50,14 @@ public class Cidade implements Serializable{
         this.nomeCidade = nomeCidade;
     }
 
+    public List<Endereco> getEnderecos() {
+        return enderecos;
+    }
+
+    public void setEnderecos(List<Endereco> enderecos) {
+        this.enderecos = enderecos;
+    }
+
     @Override
     public int hashCode() {
         int hash = 7;
